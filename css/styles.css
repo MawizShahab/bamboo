@@ -699,8 +699,8 @@ ul {
   }
 
   .container-max__width {
-    margin: auto;
     max-width: 100%;
+    width: 100%;
   }
 
   .body-spacing {
@@ -720,6 +720,7 @@ ul {
   .innovation-main-container,
   .potential-main-container,
   .features-main-container,
+  .our-process-container,
   footer {
     padding: 2.4rem;
   }
@@ -782,11 +783,6 @@ ul {
     height: auto;
   }
 
-  .process-container > :nth-child(2),
-  .process-container > :nth-child(4) {
-    align-self: end;
-  }
-
   .green-energy-container,
   .innovation-main-container.extended {
     background-size: 12rem;
@@ -823,6 +819,10 @@ ul {
   .cu-wrapper {
     padding: 2.4rem 2.4rem 0 2.4rem;
     gap: 2.4rem;
+  }
+
+  .our-process-container .section__title {
+    max-width: 100%;
   }
 }
 
@@ -915,6 +915,11 @@ ul {
   .carbon-table td {
     padding: 0.75rem;
     font-size: 0.9rem;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    min-width: 0;
   }
 }
 
