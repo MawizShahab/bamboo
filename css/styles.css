@@ -136,6 +136,10 @@ ul {
   text-decoration: underline;
 }
 
+.text__uppercase {
+  text-transform: uppercase;
+}
+
 .mini__title__primary {
   color: var(--color-primary);
   text-transform: uppercase;
@@ -606,6 +610,93 @@ ul {
   display: grid;
 }
 
+/* Page 2 Design */
+
+.hybrid-bamboo-hero {
+  position: relative;
+}
+
+.hybrid-bamboo-hero img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hb__link {
+  position: absolute;
+  top: 6rem;
+  left: 18rem;
+}
+
+.table-max__width {
+  margin: auto;
+  max-width: 1072px;
+}
+
+.table-spacing {
+  padding: 10rem;
+}
+
+.size-table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+.size-table-container .carbon-table td,
+.size-table-container .carbon-table th {
+  white-space: inherit;
+}
+
+.comparison-table-main-container {
+  background: #f2f2f7;
+}
+
+.HB-for-CS table tr td ul li {
+  list-style-type: disc !important;
+  color: #1a1a1a;
+  text-align: left;
+}
+
+.page-3-main-container .table__title span {
+  text-transform: capitalize;
+}
+
+.page-3-main-container .comparison-table-main-container.one {
+  background-image: url(../images/leaf-top.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 30rem;
+}
+
+.page-3-main-container .size-table-main-container {
+  background-image: url(../images/leaf-bottom.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 30rem;
+}
+
+.page-3-main-container .comparison-table-main-container.two {
+  background-image: url(../images/bottom-right-leaf.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 30rem;
+}
+
+.p3-content-main-container {
+  justify-items: center;
+  align-items: center;
+}
+
+.p3-content-container {
+  max-width: 60.16rem;
+}
+
+.p3-content-hero img {
+  max-width: 60.46rem;
+  max-height: 60.46rem;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -626,14 +717,29 @@ ul {
   .main__title {
     width: 55rem;
   }
+  .size-table-main-container .size-table {
+    max-width: 1072px;
+    margin: auto;
+  }
+  .comparison-table-main-container .size-table {
+    max-width: 885px;
+    margin: auto;
+  }
 }
 
 /* Laptop Large */
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .green-energy-container,
-  .innovation-main-container.extended {
+  .innovation-main-container.extended,
+  .page-3-main-container .comparison-table-main-container.one,
+  .page-3-main-container .comparison-table-main-container.two,
+  .page-3-main-container .size-table-main-container {
     background-size: 18rem;
+  }
+
+  .hb__link {
+    left: 10rem;
   }
 }
 
@@ -790,7 +896,10 @@ ul {
   }
 
   .green-energy-container,
-  .innovation-main-container.extended {
+  .innovation-main-container.extended,
+  .page-3-main-container .comparison-table-main-container.one,
+  .page-3-main-container .comparison-table-main-container.two,
+  .page-3-main-container .size-table-main-container {
     background-size: 12rem;
   }
 
@@ -829,6 +938,33 @@ ul {
 
   .our-process-container .section__title {
     max-width: 100%;
+  }
+
+  .hb__link {
+    position: unset;
+    margin-left: 2.4rem;
+  }
+
+  .table-spacing {
+    padding: 2.4rem;
+  }
+
+  .size-table-container {
+    gap: 2.4rem;
+  }
+
+  .size-table-container .table__title {
+    font-size: 1rem;
+  }
+
+  .p3-content-container {
+    max-width: 100%;
+  }
+
+  .p3-content-hero img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
   }
 }
 
